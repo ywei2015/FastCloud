@@ -4,4 +4,4 @@ spring:
   application:
     name: export
 test:
-  str: love you
+  str: love you forerver
