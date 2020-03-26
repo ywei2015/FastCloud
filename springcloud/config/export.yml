@@ -6,8 +6,3 @@ spring:
 test:
   str: love you forerver every day !
   
-management:
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
