@@ -16,7 +16,7 @@
         <sourceOutputDir name="../cloud-config/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../cloud-config/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config" />
+        <module name="cloud-config" />
       </profile>
       <profile name="Annotation profile for spring-cloud" enabled="true">
         <sourceOutputDir name="../eureka-server/target/generated-sources/annotations" />
@@ -29,8 +29,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cellplan" options="-parameters" />
+      <module name="cloud-config" options="-parameters" />
       <module name="common" options="-parameters" />
-      <module name="config" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="export" options="-parameters" />
       <module name="gateway" options="-parameters" />
