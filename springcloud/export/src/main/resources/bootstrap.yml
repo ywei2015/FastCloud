@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    config:
+      name: export
+      label: master
+      discovery:
+        enabled: true
+        serviceId: config
+    bus:
+      refresh:
+        enabled: true
+  kafka:
+    bootstrap-servers: 47.106.202.136:9092
+    consumer:
+      group-id: SpringCloud-bus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

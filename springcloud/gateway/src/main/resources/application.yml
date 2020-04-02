@@ -1,8 +1,3 @@
-zuul:
-  routes:
-    main-service:
-      sensitiveHeaders: "*"
-
 server:
   port: 8080
 spring:
@@ -25,13 +20,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 cas:
-  serverName: localhost:8082
+  serverName: localhost:8080
   casServerUrlPrefix: http://13.jiaweiwei.net:8055/cas
   casServerLoginUrl: http://13.jiaweiwei.net:8055/cas/login
   #casServerUrlPrefix: http://localhost:8078/cas
   #casServerLoginUrl: http://localhost:8078/cas/login
   singleSignOut: true
-  loginUserHandle: com.nokia.CellplanServer.sso.SsoAuthHandleImpl
+  loginUserHandle: com.demo.gateway.sso.SsoAuthHandleImpl
   characterEncoding: UTF-8
   encoding: UTF-8
   skipUrls: /*.json
